@@ -1,8 +1,9 @@
-# DevOps
+# DevOps-Paket
 
+## DevOps
 DevOps bezieht sich auf eine Reihe von Praktiken, die Softwareentwicklung (Dev) und IT-Betrieb (Ops) kombinieren.
 
-IoT (Internet of Things)
+## IoT (Internet of Things)
 IoT bezeichnet das Netzwerk physischer Geräte, die mit zusätzlichen Dingen wie Sensoren ausgestattet sind, um Daten mit anderen Geräten und Systemen über das Internet zu verbinden und auszutauschen. Ein Beispiel wären Smart Homes.
 
 Bicep
