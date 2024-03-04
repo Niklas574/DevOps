@@ -3,38 +3,38 @@ DevOps
 DevOps bezieht sich auf eine Reihe von Praktiken, die Softwareentwicklung (Dev) und IT-Betrieb (Ops) kombinieren.
 
 IoT (Internet of Things)
-IoT bezeichnet das Netzwerk physischer Geräte, die mit zusätzlichen Dingen wie Sensoren ausgestattet sind, um Daten mit anderen Geräten und Systemen über das Internet zu verbinden und auszutauschen. Ein Beispiel wären Smart Homes.
+IoT bezeichnet das Netzwerk physischer GerÃ¤te, die mit zusÃ¤tzlichen Dingen wie Sensoren ausgestattet sind, um Daten mit anderen GerÃ¤ten und Systemen Ã¼ber das Internet zu verbinden und auszutauschen. Ein Beispiel wÃ¤ren Smart Homes.
 
 Bicep
 Bicep ist eine von Microsoft entwickelte Sprache (DSL) um effizient Azure-Ressourcen bereitzustellen.
 
 Azure-Abonnement und Ressourcengruppen
-Dort können wir verschiedenste Arten von Daten Speichern.
+Dort kÃ¶nnen wir verschiedenste Arten von Daten Speichern.
 
 Blob
-Für große Mengen unsortierter Daten, wie Text- oder Binärdaten.
+FÃ¼r groÃŸe Mengen unsortierter Daten, wie Text- oder BinÃ¤rdaten.
 
 Git
-Git ist ein System, das zum Nachverfolgen von Änderungen im Quellcode während der Softwareentwicklung verwendet wird. Es ermöglicht mehreren Entwicklern die Zusammenarbeit an Projekten, die Nachverfolgung von Änderungen und die effiziente Verwaltung von Codeversionen.
+Git ist ein System, das zum Nachverfolgen von Ã„nderungen im Quellcode wÃ¤hrend der Softwareentwicklung verwendet wird. Es ermÃ¶glicht mehreren Entwicklern die Zusammenarbeit an Projekten, die Nachverfolgung von Ã„nderungen und die effiziente Verwaltung von Codeversionen.
 
 Pull-Anfrage
-Eine Pull-Anfrage ist ein Mechanismus in Git, der zum Vorschlagen von Änderungen an einem auf einer Plattform wie GitHub gehosteten Repository verwendet wird. Sie ermöglicht Entwicklern das Überprüfen, Diskutieren und Zusammenführen von Codeänderungen, bevor sie in den Hauptcode eingefügt werden.
+Eine Pull-Anfrage ist ein Mechanismus in Git, der zum Vorschlagen von Ã„nderungen an einem auf einer Plattform wie GitHub gehosteten Repository verwendet wird. Sie ermÃ¶glicht Entwicklern das Ã¼berprÃ¼fen, Diskutieren und ZusammenfÃ¼hren von CodeÃ¤nderungen, bevor sie in den Hauptcode eingefÃ¼gt werden.
 
 Branch
-Ein Branch in Git ist eine parallele Version des Codebestands, die es Entwicklern ermöglicht, an Funktionen oder Fehlerbehebungen unabhängig voneinander zu arbeiten, ohne den Hauptcodebestand zu beeinträchtigen. Branches erleichtern die gleichzeitige Entwicklung und helfen dabei, Änderungen besser zu isolieren und zu organisieren.
+Ein Branch in Git ist eine parallele Version des Codebestands, die es Entwicklern ermÃ¶glicht, an Funktionen oder Fehlerbehebungen unabhÃ¤ngig voneinander zu arbeiten, ohne den Hauptcodebestand zu beeintrÃ¤chtigen. Branches erleichtern die gleichzeitige Entwicklung und helfen dabei, Ã„nderungen besser zu isolieren und zu organisieren.
 
 Commit
-Ein Commit in Git bezieht sich auf einen Schnappschuss von Änderungen, die zu einem bestimmten Zeitpunkt im Repository vorgenommen wurden. Er stellt eine Reihe von Änderungen an Dateien sowie eine beschreibende Nachricht dar, die die Änderungen erklärt. Commits sind wichtig für die Nachverfolgung der Projekthistorie und die Versionskontrolle.
+Ein Commit in Git bezieht sich auf einen Schnappschuss von Ã„nderungen, die zu einem bestimmten Zeitpunkt im Repository vorgenommen wurden. Er stellt eine Reihe von Ã„nderungen an Dateien sowie eine beschreibende Nachricht dar, die die Ã„nderungen erklÃ¤rt. Commits sind wichtig fÃ¼r die Nachverfolgung der Projekthistorie und die Versionskontrolle.
 
 GitHub
-GitHub ist eine webbasierte Plattform zum Hosten und Zusammenarbeiten an Git-Repositories. Es bietet Funktionen wie Codehosting, Versionskontrolle, Problemverfolgung und Pull-Anfragen, wodurch es eine beliebte Wahl für Open-Source- und private Projekte ist.
+GitHub ist eine webbasierte Plattform zum Hosten und Zusammenarbeiten an Git-Repositories. Es bietet Funktionen wie Codehosting, Versionskontrolle, Problemverfolgung und Pull-Anfragen, wodurch es eine beliebte Wahl fÃ¼r Open-Source- und private Projekte ist.
 
 Repository
-Ein Repository (Repo) in Git ist ein zentraler Speicherort, an dem alle Projektdateien, die Historie und die Metadaten gespeichert sind. Es enthält die vollständige Historie der Änderungen am Projekt sowie Branches, Commits und andere damit verbundene Daten.
+Ein Repository (Repo) in Git ist ein zentraler Speicherort, an dem alle Projektdateien, die Historie und die Metadaten gespeichert sind. Es enthÃ¤lt die vollstÃ¤ndige Historie der Ã„nderungen am Projekt sowie Branches, Commits und andere damit verbundene Daten.
 
 Aktion
-GitHub Actions ist eine Funktion von GitHub, mit der Workflows und Aufgaben direkt im Repository automatisiert werden können. Sie ermöglicht es Entwicklern, benutzerdefinierte CI/CD-Pipelines zu definieren, Codeprüfungen, Bereitstellungen und andere Aufgaben zu automatisieren, was die Produktivität und Zusammenarbeit verbessert.
+GitHub Actions ist eine Funktion von GitHub, mit der Workflows und Aufgaben direkt im Repository automatisiert werden kÃ¶nnen. Sie ermÃ¶glicht es Entwicklern, benutzerdefinierte CI/CD-Pipelines zu definieren, CodeprÃ¼fungen, Bereitstellungen und andere Aufgaben zu automatisieren, was die ProduktivitÃ¤t und Zusammenarbeit verbessert.
 
 Dienstprinzipal
-Ein Dienstprinzipal in Azure ist eine Sicherheitsidentität, die von Anwendungen, Diensten und Automatisierungstools verwendet wird, um auf Azure-Ressourcen zuzugreifen. Es bietet eine Möglichkeit, Anwendungen ohne Benutzeranmeldeinformationen zu authentifizieren und zu autorisieren, was es für automatisierte Aufgaben und Bereitstellungen geeignet macht.
+Ein Dienstprinzipal in Azure ist eine SicherheitsidentitÃ¤t, die von Anwendungen, Diensten und Automatisierungstools verwendet wird, um auf Azure-Ressourcen zuzugreifen. Es bietet eine MÃ¶glichkeit, Anwendungen ohne Benutzeranmeldeinformationen zu authentifizieren und zu autorisieren, was es fÃ¼r automatisierte Aufgaben und Bereitstellungen geeignet macht.
 
