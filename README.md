@@ -4,7 +4,9 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! Hier geht es darum, wie wir 
 
 ## Was du wissen solltest:
 
-- **DevOps**: DevOps bezieht sich auf eine Reihe von Methoden, die Softwareentwicklung (Dev) und IT-Betrieb (Ops) kombinieren.
+- ### **DevOps**
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.itech-progress.com%2Fdevops-als-unternehmenskultur-veraendert-die-agile-softwareentwicklung%2F&psig=AOvVaw38hLG4xT9ycxer64qZ-iGI&ust=1709711713744000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLiP08zS3IQDFQAAAAAdAAAAABAE">
+  DevOps bezieht sich auf eine Reihe von Methoden, die Softwareentwicklung (Dev) und IT-Betrieb (Ops) kombinieren.
 - **IoT (Internet der Dinge)**: IoT bezeichnet das Netzwerk physischer Geräte, die mit zusätzlichen Dingen wie Sensoren ausgestattet sind, um Daten mit anderen Geräten und Systemen über das Internet zu verbinden und auszutauschen. Ein Beispiel wären Smart Homes.
 - **Bicep**: Bicep ist eine von Microsoft entwickelte Sprache (DSL) um effizient Azure-Ressourcen bereitzustellen.
 - **Azure-Abonnements und Ressourcengruppen**: Dort können wir verschiedenste Arten von Daten Speichern.
