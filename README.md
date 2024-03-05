@@ -19,10 +19,14 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! Hier geht es darum, wie wir 
   </p>
 - ### **Bicep**:
   Bicep ist eine von Microsoft entwickelte Sprache (DSL) um effizient Azure-Ressourcen bereitzustellen.
-- <p align="center">
+  <p align="center">
   <a href="https://ibb.co/dKX4j97"><img src="https://i.ibb.co/ThJMYXr/1-KLJZ51or-Xe6zf7-NTUhg5g-A.jpg" alt="1-KLJZ51or-Xe6zf7-NTUhg5g-A" border="0"></a>
   </p>
-- **Azure-Abonnements und Ressourcengruppen**: Dort können wir verschiedenste Arten von Daten Speichern.
+- ### **Azure-Abonnements und Ressourcengruppen**:
+  Dort können wir verschiedenste Arten von Daten in verschiedenen Storages Speichern.
+  <p align="center">
+  <img src="https://learn.microsoft.com/de-de/azure/azure-resource-manager/management/media/overview/scope-levels.png"width="600" height="400">
+  </p>
 - **Blob**: Virtueller Datenspeicher für große Mengen unsortierter Daten, wie Text- oder Binärdaten.
 - **Git**: Git ist ein System, das zum Nachverfolgen von Änderungen im Quellcode während der Entwicklung verwendet wird. Es ermöglicht mehreren Entwicklern die Zusammenarbeit an Projekten, die Nachverfolgung von Änderungen und die Verwaltung von Codeversionen.
 - **Pull-Anfrage**: Eine Pull-Anfrage ist ein Mechanismus in Git, der zum Vorschlagen von Änderungen an einem auf einer Plattform wie GitHub gehosteten Repository verwendet wird. Sie ermöglicht Entwicklern das überprüfen, Diskutieren und Zusammenführen von Codeänderungen, bevor sie in den Hauptcode eingefügt werden.
