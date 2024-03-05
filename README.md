@@ -4,10 +4,19 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! Hier geht es darum, wie wir 
 
 ## Was du wissen solltest:
 
-- ### **DevOps**
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.itech-progress.com%2Fdevops-als-unternehmenskultur-veraendert-die-agile-softwareentwicklung%2F&psig=AOvVaw38hLG4xT9ycxer64qZ-iGI&ust=1709711713744000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLiP08zS3IQDFQAAAAAdAAAAABAE">
+- ### **DevOps**:
   DevOps bezieht sich auf eine Reihe von Methoden, die Softwareentwicklung (Dev) und IT-Betrieb (Ops) kombinieren.
-- **IoT (Internet der Dinge)**: IoT bezeichnet das Netzwerk physischer Geräte, die mit zusätzlichen Dingen wie Sensoren ausgestattet sind, um Daten mit anderen Geräten und Systemen über das Internet zu verbinden und auszutauschen. Ein Beispiel wären Smart Homes.
+  <p align="center">
+  <img src="https://www.itech-progress.com/wp-content/uploads/2022/05/DevOps-Diag.png" width="573" height="265,875">
+  </p>
+
+  
+- ### **IoT (Internet of Things)**:
+  IoT bezeichnet das Netzwerk physischer Geräte, die mit zusätzlichen Dingen wie Sensoren ausgestattet sind, um Daten mit anderen Geräten und Systemen über 
+  das Internet zu verbinden und auszutauschen. Ein Beispiel wären Smart Homes.
+  <p align="center">
+  <img src="https://www.zdnet.com/a/img/resize/032dd76367e888ca28e6cd662fdffd2eeef77278/2020/09/28/6b225a1a-381a-4ceb-b13c-d2d314d41bd7/what-is-the-iot-everything-you-need-to-k-5f6cc13d5f60de4b41b7f3d4-1-sep-28-2020-16-19-38-poster.jpg?auto=webp&fit=crop&frame=1&height=814.5&width=1449" width="1159,2" height="500">
+  </p>
 - **Bicep**: Bicep ist eine von Microsoft entwickelte Sprache (DSL) um effizient Azure-Ressourcen bereitzustellen.
 - **Azure-Abonnements und Ressourcengruppen**: Dort können wir verschiedenste Arten von Daten Speichern.
 - **Blob**: Virtueller Datenspeicher für große Mengen unsortierter Daten, wie Text- oder Binärdaten.
