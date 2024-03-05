@@ -30,42 +30,18 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! Hier geht es darum, wie wir 
 - ### **Blob**:
   Virtueller Datenspeicher für große Mengen unsortierter Daten, wie Text- oder Binärdaten.
   <p align="center">
-  <img src=""width="600" height="400">
+  <img src="https://k21academy.com/wp-content/uploads/2021/04/blooob.png" width="600" height="250">
   </p>
-- **Git**: Git ist ein System, das zum Nachverfolgen von Änderungen im Quellcode während der Entwicklung verwendet wird. Es ermöglicht mehreren Entwicklern die Zusammenarbeit an Projekten, die Nachverfolgung von Änderungen und die Verwaltung von Codeversionen.
-- **Pull-Anfrage**: Eine Pull-Anfrage ist ein Mechanismus in Git, der zum Vorschlagen von Änderungen an einem auf einer Plattform wie GitHub gehosteten Repository verwendet wird. Sie ermöglicht Entwicklern das überprüfen, Diskutieren und Zusammenführen von Codeänderungen, bevor sie in den Hauptcode eingefügt werden.
-- **Branch**: Ein Branch in Git ist eine parallele Version des Codebestands, die es Entwicklern ermöglicht, an Funktionen oder Fehlerbehebungen unabhängig voneinander zu arbeiten, ohne den Hauptcodebestand zu beeinträchtigen. Branches erleichtern die gleichzeitige Entwicklung und helfen dabei, Änderungen besser zu isolieren und zu organisieren.
-- **Commit**: Ein Commit in Git bezieht sich auf einen Schnappschuss von Änderungen, die zu einem bestimmten Zeitpunkt im Repository vorgenommen wurden. Er stellt eine Reihe von Änderungen an Dateien sowie eine beschreibende Nachricht dar, die die Änderungen erklärt. Commits sind wichtig für die Nachverfolgung der Projekthistorie und die Versionskontrolle.
-- **GitHub**: GitHub ist eine webbasierte Plattform zum Hosten und Zusammenarbeiten an Git-Repos.
-- **Repository**: Ein Repository (Repo) in Git ist ein zentraler Speicherort, an dem alle Projektdateien und alle Änderungen der Dateien gespeichert werden. Zu den Änderungen am Projekt zählen zum Beispiel Code-, Dateinamenänderungen und das hinzufügen/löschen von Dateien.
+- ### **Git**:
+  Git ist ein System, das zum Nachverfolgen von Änderungen im Quellcode während der Entwicklung verwendet wird. Es ermöglicht mehreren Entwicklern die Zusammenarbeit an Projekten, die Nachverfolgung von Änderungen und die Verwaltung von Codeversionen.
+  - **Pull-Anfrage**: Eine Pull-Anfrage ist ein Mechanismus in Git, der zum Vorschlagen von Änderungen an einem auf einer Plattform wie GitHub gehosteten Repository verwendet wird. Sie ermöglicht Entwicklern das überprüfen, Diskutieren und Zusammenführen von Codeänderungen, bevor sie in den Hauptcode eingefügt werden.
+  - **Branch**: Ein Branch in Git ist eine parallele Version des Codebestands, die es Entwicklern ermöglicht, an Funktionen oder Fehlerbehebungen unabhängig voneinander zu arbeiten, ohne den Hauptcodebestand zu beeinträchtigen. Branches erleichtern die gleichzeitige Entwicklung und helfen dabei, Änderungen besser zu isolieren und zu organisieren.
+  - **Commit**: Ein Commit in Git bezieht sich auf einen Schnappschuss von Änderungen, die zu einem bestimmten Zeitpunkt im Repository vorgenommen wurden. Er stellt eine Reihe von Änderungen an Dateien sowie eine beschreibende Nachricht dar, die die Änderungen erklärt. Commits sind wichtig für die Nachverfolgung der Projekthistorie und die Versionskontrolle.
+  - **GitHub**: GitHub ist eine webbasierte Plattform zum Hosten und Zusammenarbeiten an Git-Repos.
+    - **Repository**: Ein Repository (Repo) in Git ist ein zentraler Speicherort, an dem alle Projektdateien und alle Änderungen der Dateien gespeichert werden. Zu den Änderungen am Projekt zählen zum Beispiel Code-, Dateinamenänderungen und das hinzufügen/löschen von Dateien.
+
+  <p align="center">
+  <img src="https://github.com/Niklas574/DevOps/assets/157698311/49e68d45-a6c1-4162-86ed-74cf63c54773" width="750" height="500">
+  </p>
 - **GitHub Actions**: "GitHub Actions" ist eine Funktion von GitHub, mit der Aufgaben direkt im Repository automatisiert werden können.
 - **Service Principal**: In Azure fungiert ein "Service Principal" als spezieller Benutzer oder Identität für Anwendungen. Er ermöglicht diesen, sicher auf Azure-Ressourcen zuzugreifen, ohne dass dazu die Anmeldeinformationen eines Benutzers erforderlich sind.
-
-## Wie du loslegen kannst:
-
-1. **Installiere Visual Studio Code und Bicep**, um loszulegen.
-2. **Schau dir die Bicep-Dokumentation an**, um zu verstehen, wie wir Azure-Ressourcen bereitstellen können.
-3. **Installiere PowerShell Core und die Azure-Erweiterung**, damit du mit Azure kommunizieren kannst.
-4. **Melde dich bei deinem Azure-Abonnement an und erstelle eine Ressourcengruppe**.
-
-## Erste Schritte:
-
-1. **Erstelle deine erste Vorlage für ein Speicherkonto in Azure**.
-2. **Passe die Vorlage an**, damit du den Namen des Speicherkontos wählen kannst.
-3. **Stelle deine Vorlage mit PowerShell in deiner Ressourcengruppe bereit**.
-4. **Erweitere deine Vorlage**, um einen Ort für Blobs hinzuzufügen.
-
-## Jetzt wird es interessant:
-
-### Geschichte 1:
-Du bist ein Benutzer und möchtest die Anwendung auf all deinen Geräten nutzen, ohne sie installieren zu müssen.
-
-### Geschichte 2:
-Du bist ein Administrator und musst Geräte mit der Anwendung verbinden, die Nachrichten senden.
-
-### Geschichte 3:
-Du bist ein Entwickler und möchtest die Daten anzeigen, die von den Geräten gesendet werden.
-
-### Geschichte 4:
-Du bist ein Produktmanager und möchtest, dass der gesamte Code in einem GitHub-Repository gespeichert wird, und du möchtest, dass die Bereitstellung automatisch erfolgt.
-
