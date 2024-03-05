@@ -27,7 +27,11 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! Hier geht es darum, wie wir 
   <p align="center">
   <img src="https://learn.microsoft.com/de-de/azure/azure-resource-manager/management/media/overview/scope-levels.png"width="600" height="400">
   </p>
-- **Blob**: Virtueller Datenspeicher für große Mengen unsortierter Daten, wie Text- oder Binärdaten.
+- ### **Blob**:
+  Virtueller Datenspeicher für große Mengen unsortierter Daten, wie Text- oder Binärdaten.
+  <p align="center">
+  <img src=""width="600" height="400">
+  </p>
 - **Git**: Git ist ein System, das zum Nachverfolgen von Änderungen im Quellcode während der Entwicklung verwendet wird. Es ermöglicht mehreren Entwicklern die Zusammenarbeit an Projekten, die Nachverfolgung von Änderungen und die Verwaltung von Codeversionen.
 - **Pull-Anfrage**: Eine Pull-Anfrage ist ein Mechanismus in Git, der zum Vorschlagen von Änderungen an einem auf einer Plattform wie GitHub gehosteten Repository verwendet wird. Sie ermöglicht Entwicklern das überprüfen, Diskutieren und Zusammenführen von Codeänderungen, bevor sie in den Hauptcode eingefügt werden.
 - **Branch**: Ein Branch in Git ist eine parallele Version des Codebestands, die es Entwicklern ermöglicht, an Funktionen oder Fehlerbehebungen unabhängig voneinander zu arbeiten, ohne den Hauptcodebestand zu beeinträchtigen. Branches erleichtern die gleichzeitige Entwicklung und helfen dabei, Änderungen besser zu isolieren und zu organisieren.
