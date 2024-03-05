@@ -4,19 +4,19 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! Hier geht es darum, wie wir 
 
 ## Was du wissen solltest:
 
-- **DevOps**: DevOps ist wie eine Teamarbeit zwischen Entwicklern und IT-Profis. Zusammen bringen wir großartige Software hervor und liefern sie schnell aus.
-- **IoT (Internet der Dinge)**: Das Internet der Dinge ist einfach cool! Es geht darum, wie unsere Geräte miteinander kommunizieren können, von smarten Uhren bis hin zu intelligenten Kühlschränken.
-- **Bicep**: Bicep ist eine Art magische Sprache von Microsoft, die uns hilft, Dinge in Azure einfacher zu machen.
-- **Azure-Abonnements und Ressourcengruppen**: Das sind im Grunde genommen die Orte, an denen wir unsere digitalen Sachen in der Azure-Wolke aufbewahren.
-- **Blob**: Ein Blob ist wie ein virtueller Speicherplatz in Azure, wo wir große Datenmengen wie Dateien oder Videos speichern können.
-- **Git**: Git ist wie ein cleverer Assistent, der unseren Code speichert und organisiert, damit wir ihn leichter bearbeiten können.
-- **Pull-Anfrage**: Eine Pull-Anfrage ist einfach eine Möglichkeit für uns, Änderungen an unserem Code vorzuschlagen und Feedback von anderen zu bekommen.
-- **Branch**: Ein Branch ist wie ein kleiner Ableger unseres Projekts, auf dem wir herumexperimentieren können, ohne das Hauptprojekt zu beeinträchtigen.
-- **Commit**: Ein Commit ist sozusagen ein Schnappschuss unseres Codes zu einem bestimmten Zeitpunkt. Er hilft uns, unsere Arbeit zu organisieren und nachzuverfolgen.
-- **GitHub**: GitHub ist wie ein riesiger digitaler Schrank, in dem wir unseren Code aufbewahren und mit anderen teilen können.
-- **Repository**: Ein Repository ist wie ein Ordner in unserem digitalen Schrank, in dem wir unseren Code sicher aufbewahren können.
-- **Aktion**: Aktionen sind wie kleine digitale Helfer, die uns helfen, wiederkehrende Aufgaben auf GitHub automatisch zu erledigen.
-- **Dienstprinzipal**: Ein Dienstprinzipal ist wie ein spezieller digitaler Schlüssel, mit dem wir unsere Azure-Ressourcen sicher verwalten können.
+- **DevOps**: DevOps bezieht sich auf eine Reihe von Methoden, die Softwareentwicklung (Dev) und IT-Betrieb (Ops) kombinieren.
+- **IoT (Internet der Dinge)**: IoT bezeichnet das Netzwerk physischer Geräte, die mit zusätzlichen Dingen wie Sensoren ausgestattet sind, um Daten mit anderen Geräten und Systemen über das Internet zu verbinden und auszutauschen. Ein Beispiel wären Smart Homes.
+- **Bicep**: Bicep ist eine von Microsoft entwickelte Sprache (DSL) um effizient Azure-Ressourcen bereitzustellen.
+- **Azure-Abonnements und Ressourcengruppen**: Dort können wir verschiedenste Arten von Daten Speichern.
+- **Blob**: Virtueller Datenspeicher für große Mengen unsortierter Daten, wie Text- oder Binärdaten.
+- **Git**: Git ist ein System, das zum Nachverfolgen von Änderungen im Quellcode während der Entwicklung verwendet wird. Es ermöglicht mehreren Entwicklern die Zusammenarbeit an Projekten, die Nachverfolgung von Änderungen und die Verwaltung von Codeversionen.
+- **Pull-Anfrage**: Eine Pull-Anfrage ist ein Mechanismus in Git, der zum Vorschlagen von Änderungen an einem auf einer Plattform wie GitHub gehosteten Repository verwendet wird. Sie ermöglicht Entwicklern das überprüfen, Diskutieren und Zusammenführen von Codeänderungen, bevor sie in den Hauptcode eingefügt werden.
+- **Branch**: Ein Branch in Git ist eine parallele Version des Codebestands, die es Entwicklern ermöglicht, an Funktionen oder Fehlerbehebungen unabhängig voneinander zu arbeiten, ohne den Hauptcodebestand zu beeinträchtigen. Branches erleichtern die gleichzeitige Entwicklung und helfen dabei, Änderungen besser zu isolieren und zu organisieren.
+- **Commit**: Ein Commit in Git bezieht sich auf einen Schnappschuss von Änderungen, die zu einem bestimmten Zeitpunkt im Repository vorgenommen wurden. Er stellt eine Reihe von Änderungen an Dateien sowie eine beschreibende Nachricht dar, die die Änderungen erklärt. Commits sind wichtig für die Nachverfolgung der Projekthistorie und die Versionskontrolle.
+- **GitHub**: GitHub ist eine webbasierte Plattform zum Hosten und Zusammenarbeiten an Git-Repositories. Es bietet Funktionen wie Codehosting, Versionskontrolle, Problemverfolgung und Pull-Anfragen, wodurch es eine beliebte Wahl für Open-Source- und private Projekte ist.
+- **Repository**: Ein Repository (Repo) in Git ist ein zentraler Speicherort, an dem alle Projektdateien, die Historie und die Metadaten gespeichert sind. Es enthält die vollständige Historie der Änderungen am Projekt sowie Branches, Commits und andere damit verbundene Daten.
+- **GitHub Actions**: GitHub Actions ist eine Funktion von GitHub, mit der Workflows und Aufgaben direkt im Repository automatisiert werden können. Sie ermöglicht es Entwicklern, benutzerdefinierte CI/CD-Pipelines zu definieren, Codeprüfungen, Bereitstellungen und andere Aufgaben zu automatisieren, was die Produktivität und Zusammenarbeit verbessert.
+- **Service Principal**: Ein "Service Principal" in Azure ist eine Sicherheitsidentität, die von Anwendungen, Diensten und Automatisierungstools verwendet wird, um auf Azure-Ressourcen zuzugreifen. Es bietet eine Möglichkeit, Anwendungen ohne Benutzeranmeldeinformationen zu authentifizieren und zu autorisieren, was es für automatisierte Aufgaben und Bereitstellungen geeignet macht.
 
 ## Wie du loslegen kannst:
 
