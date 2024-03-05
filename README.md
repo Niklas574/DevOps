@@ -15,9 +15,13 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! Hier geht es darum, wie wir 
   IoT bezeichnet das Netzwerk physischer Geräte, die mit zusätzlichen Dingen wie Sensoren ausgestattet sind, um Daten mit anderen Geräten und Systemen über 
   das Internet zu verbinden und auszutauschen. Ein Beispiel wären Smart Homes.
   <p align="center">
-  <img src="https://www.zdnet.com/a/img/resize/032dd76367e888ca28e6cd662fdffd2eeef77278/2020/09/28/6b225a1a-381a-4ceb-b13c-d2d314d41bd7/what-is-the-iot-everything-you-need-to-k-5f6cc13d5f60de4b41b7f3d4-1-sep-28-2020-16-19-38-poster.jpg?auto=webp&fit=crop&frame=1&height=814.5&width=1449" width="1159,2" height="500">
+  <img src="https://www.zdnet.com/a/img/resize/032dd76367e888ca28e6cd662fdffd2eeef77278/2020/09/28/6b225a1a-381a-4ceb-b13c-d2d314d41bd7/what-is-the-iot-everything-you-need-to-k-5f6cc13d5f60de4b41b7f3d4-1-sep-28-2020-16-19-38-poster.jpg?auto=webp&fit=crop&frame=1&height=814.5&width=1449" width="772,8" height="400">
   </p>
-- **Bicep**: Bicep ist eine von Microsoft entwickelte Sprache (DSL) um effizient Azure-Ressourcen bereitzustellen.
+- ### **Bicep**:
+  Bicep ist eine von Microsoft entwickelte Sprache (DSL) um effizient Azure-Ressourcen bereitzustellen.
+- <p align="center">
+  <a href="https://ibb.co/dKX4j97"><img src="https://i.ibb.co/ThJMYXr/1-KLJZ51or-Xe6zf7-NTUhg5g-A.jpg" alt="1-KLJZ51or-Xe6zf7-NTUhg5g-A" border="0"></a>
+  </p>
 - **Azure-Abonnements und Ressourcengruppen**: Dort können wir verschiedenste Arten von Daten Speichern.
 - **Blob**: Virtueller Datenspeicher für große Mengen unsortierter Daten, wie Text- oder Binärdaten.
 - **Git**: Git ist ein System, das zum Nachverfolgen von Änderungen im Quellcode während der Entwicklung verwendet wird. Es ermöglicht mehreren Entwicklern die Zusammenarbeit an Projekten, die Nachverfolgung von Änderungen und die Verwaltung von Codeversionen.
