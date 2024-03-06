@@ -26,7 +26,7 @@ resource appService 'Microsoft.Web/sites@2023-01-01' = {
       appSettings: [
         {
           name: 'TEXT_TO_REPLACE_SUBTITLE_WITH' // This value needs to match the name of the environment variable in the application code
-          value: 'Subtitle text'
+          value: 'textToReplaceSubtitleWith'
         }
         {
           name: 'SCM_DO_BUILD_DURING_DEPLOYMENT' // Build the application during deployment
