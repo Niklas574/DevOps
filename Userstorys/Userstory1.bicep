@@ -42,14 +42,6 @@ resource appService 'Microsoft.Web/sites@2023-01-01' = {
   }
 }
 
-resource webextensions 'Microsoft.Web/sites/extensions@2023-01-01' = {
-  parent: appService
-  name: 'MSDeploy'
-  properties:{
-    packageUri: 'https://github.com/Niklas574/DevOps/tree/master/Userstorys/Userstorys1.html'
-  }
-}
-
 // Source Control Integration
 resource srcControls 'Microsoft.Web/sites/sourcecontrols@2023-01-01' = {
   parent: appService
