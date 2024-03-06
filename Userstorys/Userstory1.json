@@ -1,74 +1,10 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2021-04-01/Microsoft.Resources.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-      "location": {
-        "type": "string",
-        "defaultValue": "[resourceGroup().location]",
-        "metadata": {
-          "description": "Die Standort des Ressourcengruppe."
-        }
-      },
       "repositoryBranch": {
-        "type": "string",
-        "defaultValue": "main",
-        "metadata": {
-          "description": "Der Standard-Branch des Repository."
-        }
-      },
-      "htmlContent": {
-        "type": "string",
-        "defaultValue": "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Meine Webseite</title><style>body {font-family: Arial, sans-serif;margin: 0;padding: 0;background-color: #f0f0f0;}.container {max-width: 800px;margin: 20px auto;padding: 20px;background-color: #fff;border-radius: 5px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}h1 {color: #333;text-align: center;}p {color: #666;line-height: 1.6;}</style></head><body><div class=\"container\"><h1>Willkommen auf meiner Webseite</h1><p>Dies ist ein einfaches Beispiel für eine HTML-Website. Du kannst diesen HTML-Code in deinem GitHub-Repository hochladen und verwenden.</p></div></body></html>",
-        "metadata": {
-          "description": "Der HTML-Inhalt der Webseite."
-        }
+        "value": "main"
       }
-    },
-    "resources": [
-      {
-        "type": "Microsoft.Web/serverfarms",
-        "apiVersion": "2023-01-01",
-        "name": "myAppServicePlan",
-        "location": "[parameters('location')]",
-        "properties": {
-          "reserved": false
-        }
-      },
-      {
-        "type": "Microsoft.Web/sites",
-        "apiVersion": "2023-01-01",
-        "name": "websitenamenod",
-        "location": "[parameters('location')]",
-        "dependsOn": [
-          "[resourceId('Microsoft.Web/serverfarms', 'myAppServicePlan')]"
-        ],
-        "properties": {
-          "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', 'myAppServicePlan')]",
-          "httpsOnly": true,
-          "siteConfig": {
-            "appSettings": [
-              {
-                "name": "HTML_CONTENT",
-                "value": "[parameters('htmlContent')]"
-              }
-            ],
-            "publicNetworkAccess": "Enabled"
-          }
-        }
-      },
-      {
-        "type": "Microsoft.Web/sites/sourcecontrols",
-        "apiVersion": "2023-01-01",
-        "name": "web",
-        "dependsOn": [
-          "[resourceId('Microsoft.Web/sites', 'websitenamenod')]"
-        ],
-        "properties": {
-          "repoUrl": "https://github.com/Niklas574/DevOps",
-          "branch": "[parameters('repositoryBranch')]",
-          "isManualIntegration": true
-        }
-      }
-    ]
-  }
+    }
+}
   
