@@ -46,7 +46,7 @@ resource webextensions 'Microsoft.Web/sites/extensions@2023-01-01' = {
   parent: appService
   name: 'MSDeploy'
   properties:{
-    packageUri: ''
+    packageUri: 'https://github.com/Niklas574/DevOps/tree/master/Userstorys/Userstorys1.html'
   }
 }
 
