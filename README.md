@@ -10,7 +10,6 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! Hier geht es darum, wie wir 
 > 5. Azure CLI ist ebenfalls benötigt, [hier](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) können Sie eine Anleitung zur Installation finden.
 > 6. Letztendlich wird auch Bicep benötigt, die Anleitung ist [hier](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#azure-cli) zu finden.
 
-
 ## Was du wissen solltest:
 
 - ### **DevOps**:
@@ -60,6 +59,9 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! Hier geht es darum, wie wir 
 - **GitHub Actions**: "GitHub Actions" ist eine Funktion von GitHub, mit der Aufgaben direkt im Repository automatisiert werden können.
 - **Service Principal**: In Azure dient ein "Service Principal" als spezieller Benutzer oder als Identität für Anwendungen. Er ermöglicht diesen, sicher auf Azure-Ressourcen zuzugreifen, ohne dass dazu die Anmeldeinformationen eines Benutzers erforderlich sind.
 
+
+>[!TIP]
+>Falls benötigt ist hier ein vollständiges Tutorial zu finden, welches bei der Erstellung hilft
 
 >[!NOTE]
 >Ich habe den App Service gewählt, weil er mir hilft, meine Webanwendungen schnell und unkompliziert bereitzustellen. Er kümmert sich um die Skalierung und die kontinuierliche Aktualisierung der Anwendung, was mir Zeit und Mühe spart.
