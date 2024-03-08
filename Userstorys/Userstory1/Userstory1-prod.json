@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "repositoryBranch": {
-        "value": "test"
+        "value": "main"
       }
     }
 }
