@@ -184,7 +184,7 @@ resource deploymentCredentials 'Microsoft.Web/sites/sourcecontrols@2023-01-01' =
   parent: functionApp
   name: 'web'
   properties: {
-    repoUrl: 'https://github.com/Niklas574/DevOps'
+    repoUrl: 'https://github.com/PatCer/DevOpsPaketeRepo'
     branch: repositoryBranch
     isManualIntegration: true
   }
