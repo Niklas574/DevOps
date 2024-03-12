@@ -31,10 +31,7 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! In diesem Kurs werden wir le
   <a href="https://ibb.co/dKX4j97"><img src="https://i.ibb.co/ThJMYXr/1-KLJZ51or-Xe6zf7-NTUhg5g-A.jpg" alt="1-KLJZ51or-Xe6zf7-NTUhg5g-A" border="0"></a>
   </p>
 - ### **Azure-Abonnements und Ressourcengruppen**:
-  Dort können wir verschiedenste Arten von Daten in verschiedenen Storages Speichern.
-  <p align="center">
-  <img src="https://learn.microsoft.com/de-de/azure/azure-resource-manager/management/media/overview/scope-levels.png"width="600" height="400">
-  </p>
+  Dort können wir verschiedenste Arten von Daten in verschiedenen Storages Speichern. Azure-Abonnements können mehrere Ressourcengruppen beinhalten.
 - ### **Blob**:
   Virtueller Datenspeicher für große Mengen unsortierter Daten, wie Text- oder Binärdaten.
   <p align="center">
@@ -56,5 +53,5 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! In diesem Kurs werden wir le
   <p align="center">
   <img src="https://github.com/Niklas574/DevOps/assets/157698311/49e68d45-a6c1-4162-86ed-74cf63c54773" width="750" height="500">
   </p>
-- **GitHub Actions**: "GitHub Actions" ist eine Funktion von GitHub, mit der Aufgaben direkt im Repository automatisiert werden können.
-- **Service Principal**: In Azure dient ein "Service Principal" als spezieller Benutzer oder als Identität für Anwendungen. Er ermöglicht diesen, sicher auf Azure-Ressourcen zuzugreifen, ohne dass dazu die Anmeldeinformationen eines Benutzers erforderlich sind.
+- **GitHub Actions**: Mit GitHub Actions können verschiedene Aufgaben wie das Ausführen von Tests, das Erstellen von Builds oder das Bereitstellen von Anwendungen automatisiert werden.
+- **Service Principal**: Ein Service Principal ist eine Identität oder ein Benutzer in Azure, der für die sichere Authentifizierung und Autorisierung von Anwendungen oder Diensten verwendet wird. Im Gegensatz zu einem normalem Benutzer besitzt ein Service Principal keine Anmeldeinformationen wie Benutzername und Passwort, sondern wird zum Beispiel durch ein Anmeldezertifikat authentifiziert. Service Principals ermöglichen es Anwendungen und Diensten, sicher auf Azure-Ressourcen zuzugreifen und Aktionen in Ihrem Namen auszuführen, ohne dass dazu die Anmeldeinformationen eines Benutzers erforderlich sind.
