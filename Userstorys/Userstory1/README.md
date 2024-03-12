@@ -68,4 +68,3 @@ Als Benutzer möchte ich auf die Anwendung auf all meinen Geräten zugreifen kö
 
 >[!TIP]
 >Falls benötigt ist [hier](https://medium.com/@farzam_m/getting-started-with-azure-bicep-deploying-a-hello-world-web-application-ae144535749d) ein vollständiges Tutorial zu finden, welches zeigt wie man es Erstellt.
-
