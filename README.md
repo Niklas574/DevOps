@@ -58,10 +58,3 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! Hier geht es darum, wie wir 
   </p>
 - **GitHub Actions**: "GitHub Actions" ist eine Funktion von GitHub, mit der Aufgaben direkt im Repository automatisiert werden können.
 - **Service Principal**: In Azure dient ein "Service Principal" als spezieller Benutzer oder als Identität für Anwendungen. Er ermöglicht diesen, sicher auf Azure-Ressourcen zuzugreifen, ohne dass dazu die Anmeldeinformationen eines Benutzers erforderlich sind.
-
-
->[!TIP]
->Falls benötigt ist [hier](https://medium.com/@farzam_m/getting-started-with-azure-bicep-deploying-a-hello-world-web-application-ae144535749d) ein vollständiges Tutorial zu finden, welches bei der Erstellung hilft.
-
->[!NOTE]
->Ich habe den App Service gewählt, weil er mir hilft, meine Webanwendungen schnell und unkompliziert bereitzustellen. Er kümmert sich um die Skalierung und die kontinuierliche Aktualisierung der Anwendung, was mir Zeit und Mühe spart.
