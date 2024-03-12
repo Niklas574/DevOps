@@ -1,6 +1,40 @@
 # Kundenwunsch-1
 ## Ressourcen
+In Bicep gibt es verschiedene Ressourcenvorlagen, welche benutzt werden können. Diese Vorlagen könnt ihr [hier](https://learn.microsoft.com/de-de/azure/templates/microsoft.web/containerapps?pivots=deployment-language-bicep) finden. Hier ist ein Beispiel wie diese Aufgebaut sein können:
+
+      resource appServicePlan 'Microsoft.Web/serverfarms@2023-01-01' = {
+      name: 'myAppServicePlan'
+      location: location
+      sku: {
+        name: 'F1'
+      }
+      kind: 'app'
+      properties: {
+        reserved: false
+        }
+      }
+
+>[!IMPORTANT]
+>Die Ressourcenvorlagen sind unterschiedlich aufgebaut und sehen nicht immer gleich aus, da jede Vorlage andere Werte benötigt!
+
 ## Parameterdateien
+In Bicep können Parameterdateien verwendet werden, um die Werte von Parametern zu definieren, die in einer Bicep-Datei verwendet werden. Hier ist ein Beispiel dafür, wie du Parameterdateien in Bicep erstellen kannst:
+
+    {
+      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "location": {
+          "value": "westeurope"
+        },
+        "skuName": {
+          "value": "Standard_LRS"
+        }
+      }
+    }
+
+>[!NOTE]
+>Vorlagen dafür könnt ihr [hier](https://github.com/Azure/azure-resource-manager-schemas/tree/main/schemas) finden
 ## PowerShell
 ## Aufgabenstellung
 Als Benutzer möchte ich auf die Anwendung auf all meinen Geräten zugreifen können, ohne eine Installation durchführen zu müssen. Daher würde ich meinen Browser verwenden, und wir müssen eine Ressource erstellen, um eine Website darauf zu hosten.
