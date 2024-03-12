@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "demoName": {
-        "value": "myDevDemo"
+        "value": "DevDemonod"
       },
       "skuName": {
         "value": "F1"
@@ -12,13 +12,10 @@
         "value": 1
       },
       "d2cPartitions": {
-        "value": 4
+        "value": 2
       },
-      "textToReplaceSubtitleWith": {
+      "data": {
         "value": "This is the Dev Platform"
-      },
-      "repositoryBranch": {
-        "value": "dev"
       }
     }
   }

@@ -1,6 +1,7 @@
+@description('Define the project name or prefix for all objects.')
 @minLength(1)
 @maxLength(11)
-param demoName string = 'NiklasD-'
+param demoName string = 'niklasd'
 
 @description('The datacenter to use for the deployment.')
 param location string = resourceGroup().location
@@ -12,26 +13,30 @@ param skuName string = 'F1'
 param skuUnits int = 1
 
 @description('Partitions used for the event stream.')
-param d2cPartitions int = 4
+param d2cPartitions int = 2
 
-@description('The repobranch that is being assosiated with this')
-param repositoryBranch string = 'main'
-
-@description('The text, that will bie the subtitle')
-param textToReplaceSubtitleWith string = 'You are on the main Branch'
-
-// Names
+// IoT Hub and Storage Account configuration
 var iotHubName = '${demoName}Hub${uniqueString(resourceGroup().id)}'
 var storageAccountName = '${toLower(demoName)}${uniqueString(resourceGroup().id)}'
 var storageEndpoint = '${demoName}StorageEndpont'
 var storageContainerName = '${toLower(demoName)}results'
 
-//Azure Function Params
+// Azure Function configuration
+@description('The language worker runtime to load in the function app.')
+@allowed([
+  'node'
+  'dotnet'
+  'java'
+  'python'
+])
+param runtime string = 'python'
+
 var functionAppName = demoName
 var hostingPlanName = demoName
-var functionWorkerRuntime = 'python'
+var applicationInsightsName = demoName
+var functionWorkerRuntime = runtime
 
-// Storage Account
+// Storage Account Creation
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   name: storageAccountName
   location: location
@@ -51,7 +56,7 @@ resource container 'Microsoft.Storage/storageAccounts/blobServices/containers@20
   ]
 }
 
-// IoT Hub
+// IoT Hub Creation
 resource IoTHub 'Microsoft.Devices/IotHubs@2023-06-30' = {
   name: iotHubName
   location: location
@@ -72,7 +77,7 @@ resource IoTHub 'Microsoft.Devices/IotHubs@2023-06-30' = {
           {
             connectionString: 'DefaultEndpointsProtocol=https;AccountName=${storageAccountName};EndpointSuffix=${environment().suffixes.storage};AccountKey=${storageAccount.listKeys().keys[0].value}'
             containerName: storageContainerName
-            fileNameFormat: '{iothub}{partition}{YYYY}{mm}{DD}{HH}{MM}/blob'
+            fileNameFormat: '{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}'
             batchFrequencyInSeconds: 100
             maxChunkSizeInBytes: 104857600
             encoding: 'JSON'
@@ -121,7 +126,7 @@ resource IoTHub 'Microsoft.Devices/IotHubs@2023-06-30' = {
   }
 }
 
-// Azure Function
+// Azure Function Creation
 
 resource hostingPlan 'Microsoft.Web/serverfarms@2023-01-01' = {
   name: hostingPlanName
@@ -145,10 +150,6 @@ resource functionApp 'Microsoft.Web/sites@2023-01-01' = {
     siteConfig: {
       appSettings: [
         {
-          name: 'TEXT_TO_REPLACE_SUBTITLE_WITH'
-          value: textToReplaceSubtitleWith
-        }
-        {
           name: 'AzureWebJobsStorage'
           value: 'DefaultEndpointsProtocol=https;AccountName=${storageAccountName};EndpointSuffix=${environment().suffixes.storage};AccountKey=${storageAccount.listKeys().keys[0].value}'
         }
@@ -169,6 +170,10 @@ resource functionApp 'Microsoft.Web/sites@2023-01-01' = {
           value: '~10'
         }
         {
+          name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
+          value: applicationInsights.properties.InstrumentationKey
+        }
+        {
           name: 'FUNCTIONS_WORKER_RUNTIME'
           value: functionWorkerRuntime
         }
@@ -180,12 +185,12 @@ resource functionApp 'Microsoft.Web/sites@2023-01-01' = {
   }
 }
 
-resource deploymentCredentials 'Microsoft.Web/sites/sourcecontrols@2023-01-01' = {
-  parent: functionApp
-  name: 'web'
+resource applicationInsights 'Microsoft.Insights/components@2020-02-02' = {
+  name: applicationInsightsName
+  location: location
+  kind: 'web'
   properties: {
-    repoUrl: 'https://github.com/PatCer/DevOpsPaketeRepo'
-    branch: repositoryBranch
-    isManualIntegration: true
+    Application_Type: 'web'
+    Request_Source: 'rest'
   }
 }
