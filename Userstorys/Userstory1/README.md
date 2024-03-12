@@ -55,23 +55,17 @@ PowerShell-Skripts(.ps1) benutzen wir um unsere Bicep-Dateien bereitzustellen. S
 >Durch die Kombination von Bicep und PowerShell können Sie Azure-Ressourcen auf einfache und effiziente Weise bereitstellen und verwalten.
 ## Aufgabenstellung
 Als Benutzer möchte ich auf die Anwendung auf all meinen Geräten zugreifen können, ohne eine Installation durchführen zu müssen. Daher würde ich meinen Browser verwenden, und wir müssen eine Ressource erstellen, um eine Website darauf zu hosten.
-### Aufgabe 1: 
-**Finde eine Ressource, um eine Website darauf zu hosten.**
 
-### Aufgabe 2: 
-**Erstelle eine Ressourcenvorlage dafür.**
+>[!TIP]
+> - **Finde eine Ressource, um eine Website darauf zu hosten.**
+> - **Erstelle eine Ressourcenvorlage dafür.**
+> - **Erstelle Parameterdateien für Entwicklungs-, Test- und Produktressourcen.**
+> - **Schreibe ein PowerShell-Skript, um alle Stufen bereitzustellen. Du möchtest nur eine Stufe pro Ausführung bereitstellen (./createWebApp.ps1 -Environment dev).**
+> - **Kurze Dokumentation, warum du die Ressource gewählt hast und welche anderen Optionen du gefunden hast. Vergleiche die verschiedenen Funktionen.**
 
-### Aufgabe 3: 
-**Erstelle Parameterdateien für Entwicklungs-, Test- und Produktressourcen.**
-
-### Aufgabe 4: 
-**Schreibe ein PowerShell-Skript, um alle Stufen bereitzustellen. Du möchtest nur eine Stufe pro Ausführung bereitstellen (./createWebApp.ps1 -Environment dev).**
-
-### Aufgabe 5: 
-**Kurze Dokumentation, warum du die Ressource gewählt hast und welche anderen Optionen du gefunden hast. Vergleiche die verschiedenen Funktionen.**
+>[!NOTE]
+>Ich habe den App Service gewählt, weil er mir hilft, meine Webanwendungen schnell und unkompliziert bereitzustellen. Er kümmert sich um die Skalierung und die kontinuierliche Aktualisierung der Anwendung, was mir Zeit und Mühe spart. Als alternativen gibt es zum Beispiel eine static Webapp.
 
 >[!TIP]
 >Falls benötigt ist [hier](https://medium.com/@farzam_m/getting-started-with-azure-bicep-deploying-a-hello-world-web-application-ae144535749d) ein vollständiges Tutorial zu finden, welches zeigt wie man es Erstellt.
 
->[!NOTE]
->Ich habe den App Service gewählt, weil er mir hilft, meine Webanwendungen schnell und unkompliziert bereitzustellen. Er kümmert sich um die Skalierung und die kontinuierliche Aktualisierung der Anwendung, was mir Zeit und Mühe spart. Als alternativen gibt es zum Beispiel eine static Webapp.
