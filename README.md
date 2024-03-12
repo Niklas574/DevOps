@@ -55,3 +55,6 @@ Willkommen zu unserem Lernabenteuer rund um DevOps! In diesem Kurs werden wir le
   </p>
 - **GitHub Actions**: Mit GitHub Actions können verschiedene Aufgaben wie das Ausführen von Tests, das Erstellen von Builds oder das Bereitstellen von Anwendungen automatisiert werden.
 - **Service Principal**: Ein Service Principal ist eine Identität oder ein Benutzer in Azure, der für die sichere Authentifizierung und Autorisierung von Anwendungen oder Diensten verwendet wird. Im Gegensatz zu einem normalem Benutzer besitzt ein Service Principal keine Anmeldeinformationen wie Benutzername und Passwort, sondern wird zum Beispiel durch ein Anmeldezertifikat authentifiziert. Service Principals ermöglichen es Anwendungen und Diensten, sicher auf Azure-Ressourcen zuzugreifen und Aktionen in Ihrem Namen auszuführen, ohne dass dazu die Anmeldeinformationen eines Benutzers erforderlich sind.
+
+>[!NOTE]
+>[Hier](https://github.com/Niklas574/DevOps/blob/master/Userstorys/Userstory1/README.md) geht es weiter mit dem Tutorial. Dort sind auch die ersten Beispielaufgaben zu finden.
