@@ -1,6 +1,6 @@
 # Lernpfad: DevOps
 
-Willkommen zu unserem Lernabenteuer rund um DevOps! Hier geht es darum, wie wir Software entwickeln, um sie schneller und besser zu machen. Wir werden uns dabei auf einige Werkzeuge und Konzepte konzentrieren, besonders auf das Bereitstellen von Dingen in der Azure-Cloud von Microsoft, das Verwalten unserer Projekte mit Git und das Automatisieren von Aufgaben.
+Willkommen zu unserem Lernabenteuer rund um DevOps! In diesem Kurs werden wir lernen, wie wir Software entwickeln, um sie schneller und besser zu machen. Dabei werden wir uns auf einige Werkzeuge und Konzepte konzentrieren, insbesondere auf das Bereitstellen von Dingen in der Azure-Cloud von Microsoft, das Verwalten unserer Projekte mit Git und das Automatisieren von Aufgaben. Begleite uns auf diesem spannenden Weg und meistere die damit verbundenen Aufgaben!
 >[!IMPORTANT]
 > Hier ist eine Liste benötigter Dinge:
 > 1. Ein Azure-Abonnement wird für die Erstellung von Ressourcen benötigt. Falls noch keins vorhanden ist können Sie sich [hier](https://azure.microsoft.com/de-de/free/) registrieren.
