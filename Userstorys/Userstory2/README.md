@@ -36,7 +36,8 @@ Zu den Hauptfunktionen eines IoT-Hubs gehören die folgenden:
 
 - Skalierbarkeit: Ein IoT-Hub kann eine große Anzahl von Geräten unterstützen und sich automatisch an veränderte Anforderungen anpassen. Dies ermöglicht eine skalierbare und zuverlässige IoT-Infrastruktur, die mit dem Wachstum des IoT-Ökosystems skalieren kann.
 
-Insgesamt spielt der IoT-Hub eine entscheidende Rolle bei der Bereitstellung einer robusten und zuverlässigen Infrastruktur für IoT-Anwendungen. Er bildet die Grundlage für die Vernetzung von Geräten, die Erfassung von Daten und die Bereitstellung intelligenter IoT-Lösungen in verschiedenen Branchen und Anwendungsfällen.
+>[!IMPORTANT]
+>Insgesamt spielt der IoT-Hub eine entscheidende Rolle bei der Bereitstellung einer robusten und zuverlässigen Infrastruktur für IoT-Anwendungen. Er bildet die Grundlage für die Vernetzung von Geräten, die >Erfassung von Daten und die Bereitstellung intelligenter IoT-Lösungen in verschiedenen Branchen und Anwendungsfällen.
 
 ## Aufgabenstellung
 **Als Administrator möchte ich Geräte mit der Anwendung verbinden. Die Geräte senden MQTT-Nachrichten, die von der Anwendung benötigt werden. Wir benötigen einen Endpunkt in Azure, der alle IoT-Nachrichten empfängt.**
