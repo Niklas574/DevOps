@@ -4,7 +4,7 @@
 IoT-Nachrichten, kurz für Internet der Dinge-Nachrichten, sind Datenpakete, die von IoT-Geräten generiert und über das Internet übertragen werden. Diese Nachrichten enthalten Informationen, die von den Sensoren und Aktoren der IoT-Geräte erfasst und verarbeitet werden. Sie können verschiedene Arten von Daten enthalten, wie zum Beispiel Umgebungsparameter, Statusinformationen, Messwerte, Benachrichtigungen und Befehle.
 
 Die Übertragung von IoT-Nachrichten erfolgt häufig über drahtlose Netzwerke wie WLAN, Bluetooth, Zigbee oder LoRaWAN, aber auch kabelgebundene Verbindungen wie Ethernet können genutzt werden. Die Nachrichten werden dann an spezielle IoT-Plattformen oder Cloud-Dienste gesendet, wo sie verarbeitet, analysiert und zur weiteren Verwendung gespeichert werden.
-***
+
 >[!NOTE]
 > In diesem Beispiel sieht man:
 > - (1) Gerät zu IoT
