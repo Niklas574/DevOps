@@ -36,6 +36,23 @@ In Bicep können Parameterdateien verwendet werden, um die Werte von Parametern 
 >[!NOTE]
 >Vorlagen dafür könnt ihr [hier](https://github.com/Azure/azure-resource-manager-schemas/tree/main/schemas) finden
 ## PowerShell
+PowerShell-Skripts(.ps1) benutzen wir um unsere Bicep-Dateien bereitzustellen. Sie können uns auch alles einfacher machen, zum Beispiel könnte man durch ein Skript sich anmelden lassen und eine Ressourcengruppe zu erstellen, ein Beispiel dafür ist hier:
+
+      # Anmelden bei Azure
+      Connect-AzAccount
+
+      # Variablen definieren
+      $resourceGroupName = "myResourceGroup"
+      $templateFile = "path/to/compiled/template.json"
+
+      # Ressourcengruppe erstellen
+      New-AzResourceGroup -Name $resourceGroupName -Location "West Europe"
+
+      # Bereitstellung ausführen
+      New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile $templateFile
+
+>[!TIP]
+>Durch die Kombination von Bicep und PowerShell können Sie Azure-Ressourcen auf einfache und effiziente Weise bereitstellen und verwalten.
 ## Aufgabenstellung
 Als Benutzer möchte ich auf die Anwendung auf all meinen Geräten zugreifen können, ohne eine Installation durchführen zu müssen. Daher würde ich meinen Browser verwenden, und wir müssen eine Ressource erstellen, um eine Website darauf zu hosten.
 ### Aufgabe 1: 
