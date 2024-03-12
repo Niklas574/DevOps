@@ -34,7 +34,7 @@ In Bicep können Parameterdateien verwendet werden, um die Werte von Parametern 
     }
 
 >[!NOTE]
->Vorlagen dafür könnt ihr [hier](https://github.com/Azure/azure-resource-manager-schemas/tree/main/schemas) finden
+>Vorlagen dafür könnt ihr [hier](https://github.com/Azure/azure-resource-manager-schemas/tree/main/schemas) finden.
 ## PowerShell
 PowerShell-Skripts(.ps1) benutzen wir um unsere Bicep-Dateien bereitzustellen. Sie können uns auch alles einfacher machen, zum Beispiel könnte man durch ein Skript sich anmelden lassen und eine Ressourcengruppe zu erstellen, ein Beispiel dafür ist hier:
 
