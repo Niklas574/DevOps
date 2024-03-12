@@ -14,7 +14,7 @@
       "d2cPartitions": {
         "value": 2
       },
-      "textToReplaceSubtitleWith": {
+      "data": {
         "value": "This is the Test Platform"
       }
     }
