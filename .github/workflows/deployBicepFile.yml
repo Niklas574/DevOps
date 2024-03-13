@@ -18,7 +18,7 @@ jobs:
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
-        template: ./Userstorys/Userstory1.bicep
+        template: https://github.com/Niklas574/DevOps/blob/master/Userstorys/Userstory1/Userstory1.bicep
         parameters: 'storageAccountName=niklasddkpxbvhodrlsg storagename=Standard_LRS'
         failOnStdErr: false
     - name: Deploy Bicep file
@@ -26,7 +26,7 @@ jobs:
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
-        template: ./Userstorys/Userstory2.bicep
+        template: https://github.com/Niklas574/DevOps/blob/master/Userstorys/Userstory2/Userstory2.bicep
         parameters: 'storageAccountName=niklasddkpxbvhodrlsg storagename=Standard_LRS'
         failOnStdErr: false
     - name: Deploy Bicep file
@@ -34,7 +34,7 @@ jobs:
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
-        template: ./Userstorys/Userstory3.bicep
+        template: https://github.com/Niklas574/DevOps/blob/master/Userstorys/Userstory3/Userstory3.bicep
         parameters: 'storageAccountName=niklasddkpxbvhodrlsg storagename=Standard_LRS'
         failOnStdErr: false
 
