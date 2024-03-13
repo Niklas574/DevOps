@@ -4,7 +4,7 @@ param repositoryBranch string = 'main'
 
 // App Service Plan Creation
 resource appServicePlan 'Microsoft.Web/serverfarms@2023-01-01' = {
-  name: 'myAppServicePlan'
+  name: 'myAppServicePlannod'
   location: location
   sku: {
     name: 'F1'
