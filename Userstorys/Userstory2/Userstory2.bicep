@@ -18,7 +18,7 @@ param d2cPartitions int = 2
 // IoT Hub and Storage Account configuration
 var iotHubName = '${demoName}Hub${uniqueString(resourceGroup().id)}'
 var storageAccountName = '${toLower(demoName)}${uniqueString(resourceGroup().id)}'
-var storageEndpoint = '${demoName}StorageEndpont'
+var storageEndpoint = '${demoName}StorageEndpoint'
 var storageContainerName = '${toLower(demoName)}results'
 
 // Storage Account Creation
