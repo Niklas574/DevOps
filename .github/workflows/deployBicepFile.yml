@@ -21,7 +21,7 @@ jobs:
         template: ./Userstorys/Userstory1/Userstory1.bicep
         parameters: 'location="westeurope"'
         failOnStdErr: false
-        scope: test
+        scope: resourcegroup
     - name: Deploy Bicep file
       uses: azure/arm-deploy@v1
       with:
@@ -30,7 +30,7 @@ jobs:
         template: ./Userstorys/Userstory2/Userstory2.bicep
         parameters: 'location="westeurope"'
         failOnStdErr: false
-        scope: test
+        scope: resourcegroup
     - name: Deploy Bicep file
       uses: azure/arm-deploy@v1
       with:
@@ -39,5 +39,5 @@ jobs:
         template: ./Userstorys/Userstory3/Userstory3.bicep
         parameters: 'location="westeurope"'
         failOnStdErr: false
-        scope: test
+        scope: resourcegroup
 
