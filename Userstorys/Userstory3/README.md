@@ -1,11 +1,12 @@
 # Kundenwunsch-3
 ## Aufgabenstellung
-- Erweitern Sie die IoT-Ressourcenvorlage, damit sie die Daten an ein Speicherkonto sendet.
-- Finden Sie einen Weg, um diese Route zu testen. Senden Sie eine Nachricht und sehen Sie das Ergebnis im Speicherkonto.
-- Automatisieren Sie den Test, um die Funktion für die Zukunft zu validieren.
-- Dokumentieren Sie die Verwendung Ihres Skripts, damit es von allen genutzt werden kann.
+Als Entwickler möchte ich die Daten anzeigen, die wir von den Geräten empfangen. Ich kann nur Daten anzeigen, die in einem Speicherkonto gespeichert sind.
 >[!TIP]
->Du könntest für die Aufgaben diese Befehle benutzen:
+>- Erweitern Sie die IoT-Ressourcenvorlage, damit sie die Daten an ein Speicherkonto sendet.
+>- Finden Sie einen Weg, um diese Route zu testen. Senden Sie eine Nachricht und sehen Sie das Ergebnis im Speicherkonto.
+>- Automatisieren Sie den Test, um die Funktion für die Zukunft zu validieren.
+>- Dokumentieren Sie die Verwendung Ihres Skripts, damit es von allen genutzt werden kann.
+>- Du könntest für die Aufgaben diese Befehle benutzen:
 >
 >          az storage blob upload
 >          az storage blob delete
