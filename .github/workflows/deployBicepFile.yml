@@ -19,12 +19,12 @@ jobs:
 
     - name: Deploy Bicep file
       run: |
-        az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory1/Userstory1.bicep --parameters location=westeurope
+        az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory1/Userstory1.bicep --parameters location=westeurope --mode complete
 
     - name: Deploy Bicep file
       run: |
-        az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory2/Userstory2.bicep --parameters location=westeurope
+        az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory2/Userstory2.bicep --parameters location=westeurope --mode complete
 
     - name: Deploy Bicep file
       run: |
-        az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory3/Userstory3.bicep --parameters location=westeurope
+        az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory3/Userstory3.bicep --parameters location=westeurope --mode complete
