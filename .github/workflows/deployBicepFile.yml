@@ -18,6 +18,23 @@ jobs:
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
-        template: ./main.bicep
+        template: ./Userstory1.bicep
         parameters: 'storageAccountName=niklasddkpxbvhodrlsg storagename=Standard_LRS'
         failOnStdErr: false
+    - name: Deploy Bicep file
+      uses: azure/arm-deploy@v1
+      with:
+        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
+        resourceGroupName: ${{ secrets.AZURE_RG }}
+        template: ./Userstory2.bicep
+        parameters: 'storageAccountName=niklasddkpxbvhodrlsg storagename=Standard_LRS'
+        failOnStdErr: false
+    - name: Deploy Bicep file
+      uses: azure/arm-deploy@v1
+      with:
+        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
+        resourceGroupName: ${{ secrets.AZURE_RG }}
+        template: ./Userstory3.bicep
+        parameters: 'storageAccountName=niklasddkpxbvhodrlsg storagename=Standard_LRS'
+        failOnStdErr: false
+
