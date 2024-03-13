@@ -31,4 +31,4 @@ else {
     Write-Host "Invalid environment parameter. Please use 'dev', 'test', or 'main'."
 }
 
-#./createWebApp.ps1 -Environment dev
+#./deploy.ps1 -Environment dev
