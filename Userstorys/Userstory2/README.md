@@ -47,3 +47,6 @@ Zu den Hauptfunktionen eines IoT-Hubs gehören die folgenden:
 > - Eine Ressourcenvorlage dafür erstellen.
 > - Parameterdateien für Entwicklungs-, Test- und Produktressourcen erstellen.
 > - Das Bereitstellungsskript für diese Ressource erweitern.
+
+>[!NOTE]
+> [Hier](https://github.com/Niklas574/DevOps/tree/master/Userstorys/Userstory3/README.md) geht es weiter.
