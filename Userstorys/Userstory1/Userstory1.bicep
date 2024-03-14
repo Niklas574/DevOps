@@ -1,4 +1,4 @@
-param location string = resourceGroup().location
+param location string = 'germanywestcentral'
 
 param repositoryBranch string = 'main'
 

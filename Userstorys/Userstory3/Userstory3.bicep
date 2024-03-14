@@ -4,7 +4,7 @@
 param demoName string = 'niklasd'
 
 @description('The datacenter to use for the deployment.')
-param location string = resourceGroup().location
+param location string = 'germanywestcentral'
 
 @description('The SKU to use for the IoT Hub.')
 param skuName string = 'F1'
