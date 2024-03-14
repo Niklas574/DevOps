@@ -22,7 +22,7 @@ var storageEndpoint = '${demoName}StorageEndpoint'
 var storageContainerName = '${toLower(demoName)}results'
 
 // Storage Account Creation
-resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts/blobServices@2023-01-01' = {
   name: storageAccountName
   location: location
   sku: {
@@ -30,6 +30,14 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   }
   kind: 'StorageV2'
 }
+
+// Storage Container Creation
+resource storageContainer 'Microsoft.Storage/storageAccounts/blobServices/containers@2023-01-01' = {
+  name: storageContainerName 
+  parent: storageAccount
+  properties: {}
+}
+
 
 // IoT Hub Creation
 resource IoTHub 'Microsoft.Devices/IotHubs@2023-06-30' = {
