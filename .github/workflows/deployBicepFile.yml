@@ -5,26 +5,47 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Checkout code
-      uses: actions/checkout@main
+      - name: Checkout code
+        uses: actions/checkout@main
 
-    - name: Log into Azure
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Log into Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - name: Install Azure CLI
-      run: |
-        curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+      - name: Install Azure CLI
+        run: |
+          curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
-    - name: Deploy Bicep file
-      run: |
-        az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory1/Userstory1.bicep --parameters location=westeurope --mode complete
+      - name: Check if resource 1 exists
+        id: check_resource1
+        run: |
+          result=$(az resource show --name your_resource_name1 --resource-group your_resource_group_name1 --resource-type your_resource_type1 --query id --output tsv || echo "Not found")
+          echo "::set-output name=exists1::$result"
 
-    - name: Deploy Bicep file
-      run: |
-        az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory2/Userstory2.bicep --parameters location=westeurope --mode complete
+      - name: Deploy Bicep file 1
+        if: steps.check_resource1.outputs.exists1 == 'Not found'
+        run: |
+          az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory1/Userstory1.bicep --parameters location=westeurope --mode complete
 
-    - name: Deploy Bicep file
-      run: |
-        az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory3/Userstory3.bicep --parameters location=westeurope --mode complete
+      - name: Check if resource 2 exists
+        id: check_resource2
+        run: |
+          result=$(az resource show --name your_resource_name2 --resource-group your_resource_group_name2 --resource-type your_resource_type2 --query id --output tsv || echo "Not found")
+          echo "::set-output name=exists2::$result"
+
+      - name: Deploy Bicep file 2
+        if: steps.check_resource2.outputs.exists2 == 'Not found'
+        run: |
+          az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory2/Userstory2.bicep --parameters location=westeurope --mode complete
+
+      - name: Check if resource 3 exists
+        id: check_resource3
+        run: |
+          result=$(az resource show --name your_resource_name3 --resource-group your_resource_group_name3 --resource-type your_resource_type3 --query id --output tsv || echo "Not found")
+          echo "::set-output name=exists3::$result"
+
+      - name: Deploy Bicep file 3
+        if: steps.check_resource3.outputs.exists3 == 'Not found'
+        run: |
+          az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory3/Userstory3.bicep --parameters location=westeurope --mode complete
