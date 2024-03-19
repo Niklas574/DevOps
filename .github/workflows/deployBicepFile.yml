@@ -14,7 +14,6 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Deploy Bicep file 1
-        if: steps.check_userstory1.outputs == 'exists'  # Nur wenn die Datei existiert
         run: |
           # Überprüfen, ob die Ressource bereits in Azure vorhanden ist
           exists=$(az deployment group show --resource-group ${{ secrets.AZURE_RG }} --name Userstory1Deployment --query 'properties.provisioningState' -o tsv)
@@ -25,7 +24,6 @@ jobs:
           fi
 
       - name: Deploy Bicep file 2
-        if: steps.check_userstory2.outputs == 'exists'
         run: |
           exists=$(az deployment group show --resource-group ${{ secrets.AZURE_RG }} --name Userstory2Deployment --query 'properties.provisioningState' -o tsv)
           if [ "$exists" == "Succeeded" ]; then
@@ -35,7 +33,6 @@ jobs:
           fi
           
       - name: Deploy Bicep file 3
-        if: steps.check_userstory3.outputs == 'exists'
         run: |
           exists=$(az deployment group show --resource-group ${{ secrets.AZURE_RG }} --name Userstory3Deployment --query 'properties.provisioningState' -o tsv)
           if [ "$exists" == "Succeeded" ]; then
