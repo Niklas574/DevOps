@@ -13,60 +13,33 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Install Azure CLI
-        run: |
-          curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-
-      - name: Check if Userstory1.bicep exists
-        id: check_userstory1
-        run: |
-          if [ -f ./Userstorys/Userstory1/Userstory1.bicep ]; then
-            echo "exists"
-          else
-            echo "not_exists"
-          fi
-        shell: bash
-
       - name: Deploy Bicep file 1
+        if: steps.check_userstory1.outputs == 'exists'  # Nur wenn die Datei existiert
         run: |
-          if [[ $(echo "${{ steps.check_userstory1.outputs }}" | tr -d '\r\n') == "exists" ]]; then
-            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory1/Userstory1.bicep --parameters location=westeurope --mode complete
+          # Überprüfen, ob die Ressource bereits in Azure vorhanden ist
+          exists=$(az deployment group show --resource-group ${{ secrets.AZURE_RG }} --name Userstory1Deployment --query 'properties.provisioningState' -o tsv)
+          if [ "$exists" == "Succeeded" ]; then
+            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory1Deployment --template-file ./Userstorys/Userstory1/Userstory1.bicep --parameters location=westeurope --mode complete
           else
-            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory1/Userstory1.bicep --parameters location=westeurope
+            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory1Deployment --template-file ./Userstorys/Userstory1/Userstory1.bicep --parameters location=westeurope
           fi
-
-      - name: Check if Userstory2.bicep exists
-        id: check_userstory2
-        run: |
-          if [ -f ./Userstorys/Userstory2/Userstory2.bicep ]; then
-            echo "exists"
-          else
-            echo "not_exists"
-          fi
-        shell: bash
 
       - name: Deploy Bicep file 2
+        if: steps.check_userstory2.outputs == 'exists'
         run: |
-          if [[ $(echo "${{ steps.check_userstory2.outputs }}" | tr -d '\r\n') == "exists" ]]; then
-            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory2/Userstory2.bicep --parameters location=westeurope --mode complete
+          exists=$(az deployment group show --resource-group ${{ secrets.AZURE_RG }} --name Userstory2Deployment --query 'properties.provisioningState' -o tsv)
+          if [ "$exists" == "Succeeded" ]; then
+             az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory2Deployment --template-file ./Userstorys/Userstory2/Userstory2.bicep --parameters location=westeurope --mode complete
           else
-            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory2/Userstory2.bicep --parameters location=westeurope
+            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory2Deployment --template-file ./Userstorys/Userstory2/Userstory2.bicep --parameters location=westeurope
           fi
-
-      - name: Check if Userstory3.bicep exists
-        id: check_userstory3
-        run: |
-          if [ -f ./Userstorys/Userstory3/Userstory3.bicep ]; then
-            echo "exists"
-          else
-            echo "not_exists"
-          fi
-        shell: bash
-
+          
       - name: Deploy Bicep file 3
+        if: steps.check_userstory3.outputs == 'exists'
         run: |
-          if [[ $(echo "${{ steps.check_userstory3.outputs }}" | tr -d '\r\n') == "exists" ]]; then
-            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory3/Userstory3.bicep --parameters location=westeurope --mode complete
+          exists=$(az deployment group show --resource-group ${{ secrets.AZURE_RG }} --name Userstory3Deployment --query 'properties.provisioningState' -o tsv)
+          if [ "$exists" == "Succeeded" ]; then
+            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory3Deployment --template-file ./Userstorys/Userstory3/Userstory3.bicep --parameters location=westeurope --mode complete
           else
-            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --template-file ./Userstorys/Userstory3/Userstory3.bicep --parameters location=westeurope
+            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory3Deployment --template-file ./Userstorys/Userstory3/Userstory3.bicep --parameters location=westeurope
           fi
