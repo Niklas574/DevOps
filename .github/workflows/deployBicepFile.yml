@@ -15,28 +15,12 @@ jobs:
 
       - name: Deploy Bicep file 1
         run: |
-          # Überprüfen, ob die Ressource bereits in Azure vorhanden ist
-          exists=$(az deployment group show --resource-group ${{ secrets.AZURE_RG }} --name Userstory1Deployment --query 'properties.provisioningState' -o tsv)
-          if [ "$exists" == "Succeeded" ]; then
             az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory1Deployment --template-file ./Userstorys/Userstory1/Userstory1.bicep --parameters location=westeurope --mode complete
-          else
-            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory1Deployment --template-file ./Userstorys/Userstory1/Userstory1.bicep --parameters location=westeurope
-          fi
 
       - name: Deploy Bicep file 2
         run: |
-          exists=$(az deployment group show --resource-group ${{ secrets.AZURE_RG }} --name Userstory2Deployment --query 'properties.provisioningState' -o tsv)
-          if [ "$exists" == "Succeeded" ]; then
              az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory2Deployment --template-file ./Userstorys/Userstory2/Userstory2.bicep --parameters location=westeurope --mode complete
-          else
-            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory2Deployment --template-file ./Userstorys/Userstory2/Userstory2.bicep --parameters location=westeurope
-          fi
           
       - name: Deploy Bicep file 3
         run: |
-          exists=$(az deployment group show --resource-group ${{ secrets.AZURE_RG }} --name Userstory3Deployment --query 'properties.provisioningState' -o tsv)
-          if [ "$exists" == "Succeeded" ]; then
             az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory3Deployment --template-file ./Userstorys/Userstory3/Userstory3.bicep --parameters location=westeurope --mode complete
-          else
-            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory3Deployment --template-file ./Userstorys/Userstory3/Userstory3.bicep --parameters location=westeurope
-          fi
