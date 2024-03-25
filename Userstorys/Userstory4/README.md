@@ -8,3 +8,17 @@ Als Produktbesitzer möchte ich, dass der gesamte Code für die Anwendung in ein
 >- Richten Sie eine Verbindung zum Azure-Dienstprinzipal ein.
 >- Erstellen Sie eine GitHub-Action, um Ihre Vorlagen bereitzustellen.
 >- Sorgen Sie dafür, dass die Bereitstellung durch einen Commit im Hauptzweig ausgelöst wird.
+>
+>  für die AZURE_CREDENTIALS:
+>
+                {
+                
+                    "clientSecret":  "******",
+                
+                    "subscriptionId":  "******",
+                
+                    "tenantId":  "******",
+                
+                    "clientId":  "******"
+                
+                }
